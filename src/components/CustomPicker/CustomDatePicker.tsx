@@ -57,6 +57,7 @@ const CustomDatePicker = () => {
             if (date) setStartDate(date);
           }}
         />
+        <span className="my-2">Your next math birthday will be on:</span>
         <div className="w-full p-3 bg-secondary text-center rounded-lg">
           <h3 className="ml-3 font-bold text-white text-xl">
             {startDate && calculateMathBirthday(startDate).formatInWords}

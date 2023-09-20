@@ -49,6 +49,7 @@ const DropdownPicker = () => {
             <SelectorItem prev={22} current={23} next={24} name="year" />
           </div>
         </div>
+        <span className="my-2">Your next math birthday will be on:</span>
         <div className="mt-2 w-full flex justify-center items-center py-3 bg-secondary rounded-xl bg-opacity-50">
           <h3 className="ml-3 font-bold text-white text-xl">{calculateMathBirthday(new Date()).formatInWords}</h3>
         </div>

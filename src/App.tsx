@@ -5,7 +5,7 @@ import CustomDatePicker from './components/CustomPicker/CustomDatePicker';
 import InputsPicker from './components/InputsPicker/InputsPicker';
 import DropdownPicker from './components/DropdownPicker/DropdownPicker';
 import Screen1 from './assets/screen1.webp';
-import Screen2 from './assets/screen2.webp';
+import Screen2 from './assets/screen3.webp';
 
 function App() {
   return (
@@ -20,6 +20,9 @@ function App() {
         </p>
         <div className="flex flex-col items-center justify-start">
           <BasicDatePicker />
+          <div className="w-full xl:w-80 py-2 text-left rounded-lg bg-secondary ">
+            <h3 className="text-white font-bold text-center">Wireframes and additional designs</h3>
+          </div>
           <CustomDatePicker />
           <InputsPicker />
           <DropdownPicker />

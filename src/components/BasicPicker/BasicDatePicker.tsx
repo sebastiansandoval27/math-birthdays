@@ -30,7 +30,7 @@ const BasicDatePicker = () => {
           onClick={() => setShowTooltip(false)}
         />
       )}
-      <section className="basic my-3 flex flex-col items-center justify-center py-3 w-full h-72 lg:w-96 border-2 border-primary rounded-lg px-3 relative">
+      <section className="basic my-3 flex flex-col items-center justify-center py-3 w-full h-80 lg:w-96 border-2 border-primary rounded-lg px-3 relative">
         <span className="absolute top-2 right-2 w-7 h-7 cursor-pointer" onClick={() => setShowTooltip(true)}>
           <AiOutlineInfoCircle className="text-primary w-full h-full" />
         </span>
@@ -60,6 +60,7 @@ const BasicDatePicker = () => {
             setIsOpen(false);
           }}
         />
+        <span>Your next math birthday will be on:</span>
         <div className="mt-2 w-full flex justify-center items-center py-3 bg-secondary rounded-xl">
           <h3 className="ml-3 font-bold text-white text-xl">
             {startDate && calculateMathBirthday(startDate).formatInWords}
